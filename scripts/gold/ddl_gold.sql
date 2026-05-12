@@ -36,7 +36,7 @@ ROW_NUMBER() OVER( ORDER BY ci.cst_id) AS customer_key,
     ELSE 'n/a' 
     END AS gender,
 
-    ci.cst_marital_status,
+    ci.cst_marital_status as marital_status,
     ca.bdate as birth_date,
     ci.cst_create_date as create_date
 
